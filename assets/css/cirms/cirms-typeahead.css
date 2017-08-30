@@ -1,0 +1,60 @@
+.twitter-typeahead {
+  width: 100%;
+}
+
+.twitter-typeahead .tt-menu {
+  min-width: 200px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: block !important;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.twitter-typeahead .tt-menu.tt-open:not(.tt-empty) {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.twitter-typeahead .tt-suggestion {
+  color: #333;
+  cursor: pointer;
+}
+
+.twitter-typeahead .tt-suggestion:hover .media-heading {
+  text-decoration: underline;
+}
+
+.twitter-typeahead .tt-suggestion .media-body{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.twitter-typeahead .tt-hint {
+  color: #818181 !important;
+}
+
+.twitter-typeahead img{
+  width: 64px;
+  height: 64px;
+}
